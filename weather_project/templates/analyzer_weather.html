@@ -1,0 +1,56 @@
+<!-- templates/analyze_weather.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .stats div {
+            font-size: 18px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Data Analysis</h1>
+        <div class="stats">
+            <h1>Weather Data for {{ location }}</h1>
+            <div><strong>Average Temperature:</strong> {{ avg_temp }}°C</div>
+            <div><strong>Average Humidity:</strong> {{ avg_humidity }}%</div>
+        </div>
+        <img src="data:image/png;base64,{{ graph }}" alt="Weather Trends Graph">
+    </div>
+</body>
+</html>
