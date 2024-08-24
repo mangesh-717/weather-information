@@ -1,2 +1,14 @@
-# weather-information
-The Weather Data Aggregator and Analyzer is a Django-based web application designed to fetch, store, and analyze weather data for specified locations. Users can input a location to retrieve current weather information, which is then stored in a database. The application provides various analysis and visualization tools to display weather trends, 
+# Weather Data Aggregator and Analyzer
+
+## Overview
+This Django application fetches weather data from a public API, stores it in a database, and provides analysis and visualization of the weather trends over time.
+
+## Prerequisites
+- Python 3.x
+- Django
+- Required Python packages (listed in `requirements.txt`)
+
+## Setup
+
+### 1. Clone the Repository
+Clone the repository to your local machine using Git:
