@@ -12,7 +12,7 @@ def fetch_weather_data(request):
     if request.method == 'POST':
         location = request.POST['location'] #here location is taken from user to show weather information
         location2=str(copy.deepcopy(location)).upper() #here location name is convirted to upper for intigerity
-        API_KEY = '55c32c3406e802eb3f034d0bd6cebf4e' #this is my api key
+        API_KEY = '' #this is my api key
         url = f"http://api.openweathermap.org/data/2.5/weather?q={location}&appid={API_KEY}"
         response = requests.get(url)
         if response.status_code == 200:
